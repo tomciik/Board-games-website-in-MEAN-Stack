@@ -1,0 +1,16 @@
+extends layout
+  
+block content
+  table.table.table-hover
+    thead
+      tr
+        th(scope="col") #
+        th(scope="col") Nazwa
+        th(scope="col") Ocena 
+    tbody
+    for b, i in boards
+      tr
+        th(scope="row")= i + 1
+        td #{b.nazwa} 
+        td #{b.ocena}
+          

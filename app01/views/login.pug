@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    form(action='login/logowanie', method="POST")
+        .mb-3
+            label.form-label Login
+            input.form-control(type="text", name="username", placeholder="" required)
+        .mb-3
+            label.form-label Hasło
+            input.form-control(type="password", name="password", placeholder="", required)
+        div
+            button.btn.btn-primary(type="submit", value="Zaloguj") Zaloguj
+        

@@ -1,0 +1,17 @@
+extends layout
+  
+block content
+  table.table.table-hover
+    thead
+      tr
+        th(scope="col") Nazwa
+        th(scope="col") Kategoria
+        th(scope="col") Ocena 
+    tbody
+    for b, i in boards
+      if b.kategoria == "strategiczne"
+        tr
+          td #{b.nazwa} 
+          td #{b.kategoria} 
+          td #{b.ocena}
+          
